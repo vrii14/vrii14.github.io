@@ -196,6 +196,11 @@ section .top {
   font-weight: bold;
   color: rgb(0, 238, 255);
 }
+.image{
+  height: 25rem;
+}
+
+
 .cd-container {
   width: 90%;
   max-width: 1080px;
@@ -448,6 +453,9 @@ section .top {
 
   }
   .small-icon{
+    display: none;
+  }
+  .image{
     display: none;
   }
 }

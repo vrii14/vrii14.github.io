@@ -152,7 +152,7 @@
           </ul>
         </div>
         <div class="col-md-5 col-lg-5 slide-in from-right">
-
+            <img src="./images/switz.jpeg" class="image rounded"/>
         </div>
       </div>
       <div class="row my-5 py-5">
@@ -478,22 +478,25 @@
       <h1 class="purple heading">Let's Talk! 👥</h1>
       <div class="row my-5 pt-3">
         <div class="info col-md-7 col-lg-7 col-sm-7">
-          <form>
+          <form id="javascript_form">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input
                   type="text"
                   class="form-control form-control-lg mb-2"
-                  id="firstName"
-                  placeholder="First Name"
+                  id="fullName"
+                  placeholder="Full Name"
+                  name="name"
                 />
               </div>
               <div class="form-group col-md-6">
                 <input
-                  type="text"
+                  type="email"
                   class="form-control form-control-lg mb-2"
-                  id="lastName"
-                  placeholder="Last Name"
+                  id="email"
+                  placeholder="Your Email"
+                  name="email"
+                  required
                 />
               </div>
             </div>
@@ -503,6 +506,8 @@
                 class="form-control form-control-lg mb-3"
                 id="subject"
                 placeholder="Subject"
+                name="subject"
+                required
               />
             </div>
             <div class="form-group">
@@ -510,10 +515,12 @@
                 class="form-control form-control-lg mb-2"
                 id="message"
                 rows="5"
+                name="text"
                 placeholder="Your message/feedback"
+                required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-dark">Send</button>
+            <button type="submit" class="btn btn-dark" id="js_send" >Send</button>
           </form>
         </div>
         <div class="col-md-5 col-lg-5 col-sm-5 contact-info">
