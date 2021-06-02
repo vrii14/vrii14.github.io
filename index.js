@@ -37,6 +37,16 @@ sliders.forEach(slider => {
     appearOnScroll.observe(slider)
 });
 
+function js_onSuccess() {
+    // remove this to avoid redirect
+    window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+}
+
+function js_onError(error) {
+    // remove this to avoid redirect
+    window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+}
+
 var sendButton = document.getElementById("js_send");
 
 function js_send() {
