@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    transition: 0.3s all ease-in-out; 
+    scroll-behavior:smooth;
+  }
+  
+body{
+    background: url("./images/darkbg.jpg") repeat;
+    position: relative;
+    background-size:contain;
+}
+
+.header {
+  padding: 20%;
+  page-break-after: always;
+}
+.nav-item {
+  font-size: large;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  color: whitesmoke !important;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.purple{
+  color: rgb(0, 238, 255);
+  text-shadow:
+  0 0 5px rgb(177, 175, 175);
+  font-weight: bold;
+}
+
+hr{
+  width: 80%;
+  margin: 18px auto 24px auto;
+  border-color: rgba(248, 247, 247, 0.1);
+}
+
+.center{
+  position: relative;
+  top: 35vh;
+  padding-bottom: 50rem;
+  line-height: 2.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.gif {
+	position: relative;
+  top: 8vh;
+  left: 35vh;
+padding-bottom:30%;
+}
+
+.second {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #98B3C6;
+}
+
+.links {
+ text-decoration: none;
+  letter-spacing: 1.5rem;
+  font-size: larger;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+}
+div > a {
+  display: inline-block;
+}
+
+
+.info{
+  color: rgb(156, 155, 155);
+  font-size: large;
+}
+
+
+.highlight{
+  color: whitesmoke;
+  font-weight: bold;
+}
+.contact{
+  list-style: none;
+  line-height: 2.2;
+}
+.arrow{
+  text-align: center;
+}
+
+section .top {
+  height: 100em;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .gif{
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+.css-typing h1 {
+  border-right: .15em solid white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.css-typing h1 {
+  width: 7em;
+    opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+   -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+.css-typing h1:nth-child(2) {
+  width: 8.2em;
+
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  99.9% {
+    border-right: .15em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  99.9% {
+    border-right: .15em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
