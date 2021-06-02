@@ -2,6 +2,7 @@
     box-sizing: border-box;
     transition: 0.3s all ease-in-out; 
     scroll-behavior:smooth;
+    font-family: 'Poppins', sans-serif;
   }
   
 body{
@@ -19,10 +20,15 @@ body{
   font-weight: bold;
 }
 
-.nav-link:hover{
-  color: whitesmoke !important;
+.nav-link:hover, .navbar-brand:hover{
+  color: rgb(0, 238, 255) !important;
   font-size: large;
   text-decoration: underline;
+}
+
+.fonts{
+  font-size: xx-large !important;
+  font-weight: bold;
 }
 
 .purple{
@@ -30,6 +36,74 @@ body{
   text-shadow:
   0 0 5px rgb(177, 175, 175);
   font-weight: bold;
+}
+.heading{
+  font-family: 'Lora', serif;
+}
+
+.heading:hover{
+  color: rgb(168, 216, 219);
+  text-shadow:
+  0 0 5px rgb(150, 147, 147);
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 45px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: #010307;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #5383d3;
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,.from-right{
+  transition: 
+  opacity 250ms ease-in,
+  transform 400ms ease-in;
+  opacity: 0;
+}
+
+
+.from-left.appear,.from-right.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.big{
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 4vw;
+  z-index: -1;
+  font-weight: bolder;
+  
 }
 
 hr{
@@ -72,7 +146,7 @@ a {
   color: white;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 div > a {
   display: inline-block;
@@ -105,22 +179,30 @@ section .top {
   .gif{
     display: none;
   }
+  .footer-nav {
+    display: none !important;
+  }
+  .smaller {
+    font-family: 'Lora', serif;
+  }
+  .big{
+    font-size: 15vw;
+    color: rgba(255, 255, 255, 0.2);
+
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
+  .big{
+    font-size: 6vw;
+    color: rgba(255, 255, 255, 0.2);
+
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
 
 .css-typing h1 {
   border-right: .15em solid white;
@@ -130,7 +212,7 @@ section .top {
 
 
 .css-typing h1 {
-  width: 7em;
+  width: 7.5em;
     opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end);
@@ -142,7 +224,7 @@ section .top {
 
 
 .css-typing h1:nth-child(2) {
-  width: 8.2em;
+  width: 9.2em;
 
   -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end);
