@@ -9,6 +9,7 @@ body{
     background: url("./images/darkbg.jpg") repeat;
     position: relative;
     background-size:contain;
+    overflow-x:hidden;  
 }
 
 .header {
@@ -51,8 +52,8 @@ body{
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 45px;
-  right: 30px;
+  bottom: 3rem;
+  right: 3rem;
   z-index: 99;
   font-size: 25px;
   border: none;
@@ -174,8 +175,15 @@ div > a {
 }
 .arrow{
   text-align: center;
-}
+  font-size: 3vw;
+  margin-top: 8vw;
+  margin-bottom: 0;
 
+}
+.arrow-par{
+  display: flex !important;
+  align-items: center;
+}
 section .top {
   height: 100em;
 }
@@ -458,6 +466,24 @@ section .top {
   .image{
     display: none;
   }
+
+  .from-left {
+    transform: translateX(-10%);
+  }
+
+  .from-right {
+    transform: translateX(10%);
+  }
+
+  #myBtn{
+    right: 1.5rem;
+  }
+  .arrow{
+    font-size: 9vw;
+    margin-top: 8vw;
+    margin-bottom: 0;
+
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -472,6 +498,12 @@ section .top {
   }
   .h-five{
     display: none;
+  }
+  .arrow{
+    font-size: 5vw;
+    margin-top: 8vw;
+    margin-bottom: 0;
+
   }
 }
 
