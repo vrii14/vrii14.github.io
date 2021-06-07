@@ -146,6 +146,7 @@ padding-bottom:30%;
  text-decoration: none;
   letter-spacing: 1.5rem;
   font-size: larger;
+  margin-bottom: 1.5rem;
 }
 a {
   text-decoration: none;
@@ -160,7 +161,7 @@ div > a {
 
 
 .info{
-  color: rgb(156, 155, 155);
+  color: rgba(255,255,255,0.7);
   font-size: large;
 }
 
@@ -484,6 +485,9 @@ section .top {
     margin-bottom: 0;
 
   }
+  .cd-timeline-content:hover {
+    transform: scale(1.05);
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -502,6 +506,10 @@ section .top {
   .arrow{
     font-size: 5vw;
     margin-top: 8vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .links{
     margin-bottom: 0;
 
   }
